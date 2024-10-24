@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e60012; /* 赤色 */
+    padding: 10px;
+    color: white;
+}
+
+.logo img {
+    width: 80px;
+    height: 64px;
+}
+
+.title h1 {
+    font-family: Impact, sans-serif;
+    font-size: 21pt;
+    margin: 0;
+}
+
+.title p {
+    font-family: Impact, sans-serif;
+    font-size: 13pt;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hamburger-menu img {
+    width: 60px; /* 画像のサイズに合わせて調整 */
+    height: 34px;
+    margin-right: 0px;
+}
+
+.language-switch {
+    display: flex;
+    align-items: center;
+    font-family: Impact, sans-serif;
+    font-size: 14px;
+}
+
+.lang-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* ドロップダウンメニュー */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #8B0000; /* 赤色 */
+    padding: 10px;
+    position: absolute;
+    top: 60px; /* ヘッダーの下に表示 */
+    width: 100%;
+    left: 0;
+        animation: slideDown 0.3s ease-in-out forwards;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+      }
+      to {
+          transform: translateY(0);
+      }
+}
+
+.dropdown-menu .menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu .menu-item:hover {
+    background-color: #c4000e;
+}
+
+.main-banner {
+    background-color: #e6e6fa;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-details, .performers, .timetable, .food-booths, .ticket-application {
+    padding: 20px;
+}
+
+.performers .performer, .food-booths .booth {
+    display: inline-block;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

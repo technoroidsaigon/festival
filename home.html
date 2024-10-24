@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunago Japan Festival</title>
+    <link rel="stylesheet" href="common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+          <img src="img/logo.png" alt="Logo">
+      </div>
+      <div class="title">
+          <h1>“TsunaGO” Japan Festival</h1>
+          <p>ON FEB 23 SUN  Thephasadin STUDIUM</p>
+      </div>
+      <nav class="menu">
+        <div class="hamburger-menu" onclick="toggleMenu()">
+              <img src="img/hamburger-menu.png" alt="Menu">
+        </div>
+        <!-- ハンバーガー展開 -->
+        <div id="dropdown-menu" class="dropdown-menu">
+          <a href="#" class="menu-item">トップ</a>
+          <a href="#" class="menu-item">お申し込みフォーム</a>
+          <a href="#" class="menu-item">出演者情報</a>
+          <a href="#" class="menu-item">タイムテーブル</a>
+          <a href="#" class="menu-item">出展ブース情報</a>
+          <a href="#" class="menu-item">注意事項</a>
+        </div>
+
+        <div class="language-switch">
+            <a href="#" class="lang-link">JPN</a> |
+            <a href="#" class="lang-link">THA</a>
+        </div>
+      </nav>
+  </header>
+
+
+    <section class="main-banner">
+        <h2>Bridging Generations with All of Us</h2>
+        <p>2025/2/23 (日)</p>
+    </section>
+
+    <section class="event-details">
+        <p>イベントの詳細説明…</p>
+        <button>チケット申込</button>
+    </section>
+
+    <section class="performers">
+        <h3>出演者</h3>
+        <div class="performer">
+            <img src="performer1.png" alt="ドラえもん＆野沢雅子">
+            <p>ドラえもん＆野沢雅子</p>
+        </div>
+        <div class="performer">
+            <img src="performer2.png" alt="松田聖子＆Miyavi">
+            <p>松田聖子＆Miyavi</p>
+        </div>
+    </section>
+
+    <section class="timetable">
+        <h3>スケジュール</h3>
+        <ul>
+            <li>10:00 - 11:00: VIP Attend</li>
+            <li>11:00 - 12:00: Standby</li>
+            <li>12:00 - 13:00: ポジション配布</li>
+            <li>13:00 - 14:00: VIP Attend</li>
+        </ul>
+    </section>
+
+    <section class="food-booths">
+        <h3>フードブース</h3>
+        <div class="booth">
+            <img src="booth1.png" alt="ショウブース1">
+        </div>
+        <!-- 他のブースも同様に配置 -->
+    </section>
+
+    <section class="ticket-application">
+        <h3>チケット申込</h3>
+        <form action="submit_ticket.php" method="post">
+            <label for="name">名前</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nationality">国籍</label>
+            <input type="text" id="nationality" name="nationality" required>
+
+            <button type="submit">申込</button>
+        </form>
+    </section>
+
+    <script src="form.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+</html>
